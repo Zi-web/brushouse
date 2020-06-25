@@ -1,0 +1,544 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Brushouse</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/png">
+  </head>
+  <body>
+    <div class="preloader">
+      <svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path fill="#FFD12D"
+          d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+        </path>
+      </svg>
+    </div>
+    <!------header ------->
+    <header class="header">
+      <div class="header__wrapper">
+        <div class="logo">
+          <img src="img/logo.png" alt="">
+        </div>
+        <div class="address">
+          <p>Минский район, г.п. Ждановичи, ул. Ботаническая, д.16</p>
+        </div>
+        <div class="social">
+          <div class="social__round">
+            <img src="img/Viber.png" alt="">
+          </div>
+          <div class="social__round">
+            <img src="img/whatsapp.png" alt="">
+          </div>
+          <div class="social__round">
+            <img src="img/Telegram.png" alt="">
+          </div>
+        </div>
+        <div class="mail">
+          <p class="mail__online">Мы онлайн</p>
+          <a class="mail__link" href="mailto:info@brushouse.by">info@brushouse.by</a>
+        </div>
+        <div class="phone">
+          <a href="tel:+375(29)6333520">+375(29)-633-35-20</a>
+          <a href="tel:+375(33)6333520">+375(33)-633-35-20</a>
+        </div>
+        <button class="btn btn--call">
+          Заказать звонок
+        </button>
+      </div>
+    </header>
+    
+    <!------main ------->
+    <section class="main">
+      <div class="main__wrapper">
+        <div class="main__content">
+          <div class="main__col-1">
+            <h1 class="main__title">
+              Соберем каркасный дом для вас и ваших внуков всего за <span>8 недель</span>
+            </h1>
+            <p class="main__subtitle1">по технологии строительства brushouse</p>
+            <p class="main__subtitle2">С гарантией в <span>5 лет</span></p>
+            <div class="main__items">
+              <figure class="main__item  main__item--1">
+                <div class="main__item--img">
+                  <img src="img/Icon1.png" alt="">
+                </div>
+                <figcaption>Без предоплаты</figcaption>
+              </figure>
+              <figure class="main__item  main__item--2">
+                <div class="main__item--img">
+                  <img src="img/Icon3.png" alt="">
+                </div>
+                <figcaption>Соблюдая европейские стандарты качества</figcaption>
+              </figure>
+              <figure class="main__item  main__item--3">
+                <div class="main__item--img">
+                  <img src="img/Icon2.png" alt="">
+                </div>
+                <figcaption>Без нервотрепки</figcaption>
+              </figure>
+              <figure class="main__item  main__item--4">
+                <div class="main__item--img">
+                  <img src="img/Icon4.png" alt="">
+                </div>
+                <figcaption>Расчет сметы БЕСПЛАТНО</figcaption>
+              </figure>
+            </div>
+            <button class="main__btn  btn  btn--main">
+              <span>Смотреть видео о компании</span>
+            </button>
+          </div>
+          <div class="main__col-2">
+            <form action="#" method="post" class="main-form">
+              <h3 class="main-form__title">Хотите разработать проект дома за 1 день?</h3>
+              <p class="main-form__subtitle">Оставьте заявку для консультации с архитектором!</p>
+              <div class="main-form__input-wrap">
+                <label for="tel"></label>
+                <input class="main-form__input" type="tel" id="tel" name="uphone" placeholder="Номер телефона"  required>
+              </div>
+              <button type="submit" title="Submit" class="btn main-form__btn btn--main-form"><span>Оставить заявку</span>+ получить подарок</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!------bonus ------->
+    <section class="bonus">
+      <div class="bonus__wrapper">
+        <h2 class="bonus__title">
+          Рассчитайте за <span>1 минуту</span> стоимость вашего дома и в качестве бонусов вы получите:
+        </h2>
+        <div class="bonus__items">
+          <figure class="bonus__item">
+            <img src="img/img1.png" alt="">
+            <figcaption>
+              Эскиз вашего дома
+            </figcaption>
+          </figure>
+          <figure class="bonus__item">
+            <img src="img/img2.png" alt="">
+            <figcaption>
+              Примеры построенных объектов
+            </figcaption>
+          </figure>
+          <figure class="bonus__item">
+            <img src="img/img3.png" alt="">
+            <figcaption>
+              Консультацию по телефону с архитектором
+            </figcaption>
+          </figure>
+          <figure class="bonus__item">
+            <img src="img/img4.png" alt="">
+            <figcaption>
+              Практические советы по экономии стройматериалов
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    
+    <!------quiz------->
+    <section class="quiz">
+      <div id="quiz__col" class="quiz__wrapper">
+        <div id="quiz__col1" class="quiz__col1">
+          <div class="quiz__col1--title">
+            Здорово, что вы помогаете нашим менеджерам быстрее помочь вам!
+          </div>
+          <form action="#" method="post" class="main-form">
+            <h3 class="main-form__title  main-form__title--quiz">Хотите разработать проект дома за 1 день?</h3>
+            <p class="main-form__subtitle  main-form__subtitle--quiz">Оставьте заявку для консультации с архитектором!</p>
+            <div class="main-form__input-wrap">
+              <label for="tel"></label>
+              <input class="main-form__input" type="tel" id="tel" name="uphone" placeholder="Номер телефона"  required>
+            </div>
+            <button type="submit" title="Submit" class="btn main-form__btn btn--main-form"><span>Оставить заявку</span>+ получить подарок</button>
+          </form>
+        </div>
+        <div id="quiz__col2" class="quiz__col2">
+          <div class="question">
+            <div class="question__header">
+              <h2 class="question__title">Вопрос <span id="question__title-num">1</span> из 4 </h2>
+                <div class="progress__items">
+                  <div id="progress__item-1" class="progress__item  progress__item-1 active"></div>
+                  <div id="progress__item-2" class="progress__item  progress__item-2"></div>
+                  <div id="progress__item-3" class="progress__item"></div>
+                  <div id="progress__item-4" class="progress__item"></div>
+                </div>
+              </div>
+              <div class="question__content  question-1" id="question-1">
+                
+                  <div class="question__subtitle">С какой целью строите дом?</div>
+                  <div class="question__item-wrapper">
+                    <div class="question__item">
+                      <div class="question__input">
+                        <input type="radio" name="item1" id="item1" value="Постоянное проживание" checked>
+                        <label for="item1">
+                        <div class="question__input--name">
+                          <p>Постоянное проживание</p>
+                        </div>
+                        <span class="question__input--text">Дом с 5-летней гарантией, который будет собран уже через 60 дней с вашим минимальным контролем!</span>
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="question__item">
+                      <div class="question__input">
+                        <input type="radio" name="item1" id="item2" value="Сезонное проживание">
+                        <label for="item2">
+                        <div class="question__input--name">
+                          <p>Сезонное проживание</p>
+                        </div>
+                        <span class="question__input--text">Каркасная дача, в которой жарким летом приятно жарить шашлыки и в лютые бураны отмечать новогодние праздники.</span>
+                        </label>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div id="btn1" class="question__btn">
+                    <input type="submit" value="Далее" class="btn  btn--question">
+                  </div>
+                </div>
+
+              <div class="question__content  question-2"  id="question-2">
+                
+                  <div class="question__subtitle">Есть ли у вас участок?</div>
+                  <div class="question__item-wrapper--full">
+
+                    <div class="  question__item--full ">
+                      <div class="question__input  question__input--full">
+                        <input type="radio" name="item2" id="item3" value="Есть" checked="">
+                        <label for="item3">
+                        <div class="question__input--name  question__input--name-full">
+                          <p>Есть</p>
+                        </div>
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="  question__item--full ">
+                      <div class="question__input  question__input--full">
+                        <input type="radio" name="item2" id="item4" value="Нет">
+                        <label for="item4">
+                        <div class="question__input--name  question__input--name-full">
+                          <p>Нет</p>
+                        </div>
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="  question__item--full ">
+                      <div class="question__input  question__input--full">
+                        <input type="radio" name="item2" id="item5" value="Планирую купить">
+                        <label for="item5">
+                        <div class="question__input--name  question__input--name-full">
+                          <p>Планирую купить</p>
+                        </div>
+                        </label>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="btn__wrap">
+                    <div id="btnPrev1" class="question__btn">
+                      <input type="submit" value="Назад" class="btn  btn--prev">
+                    </div>
+                    <div id="btn2" class="question__btn">
+                      <input type="submit" value="Далее" class="btn  btn--question">
+                    </div>
+                  </div>
+                </div>
+              
+              <div class="question__content  question-3"  id="question-3">
+                  <div class="question__subtitle">Есть ли эскиз или проект дома, который хотите построить?</div>
+                  <div class="question__item-wrapper--full">
+
+                    <div class="  question__item--full ">
+                      <div class="question__input  question__input--full">
+                        <input type="radio" name="item3" id="item6" value="Есть" checked>
+                        <label for="item6">
+                        <div class="question__input--name  question__input--name-full">
+                          <p>Есть</p>
+                        </div>
+                        </label>
+                        <input name="file" type="file" name="file" id="input__file" class="input input__file" multiple>
+                          <label for="input__file" class="input__file-button">
+                            <span class="input__file-icon-wrapper">
+                              <img class="input__file-icon" src="img/upload.png" alt="Выбрать файл" width="25">
+                            </span>
+                            <span class="input__file-button-text"></span>
+                          </label>
+                      </div>
+                    </div>
+
+                    <div class="  question__item--full ">
+                      <div class="question__input  question__input--full">
+                        <input type="radio" name="item3" id="item7" value="Нет">
+                        <label for="item7">
+                        <div class="question__input--name  question__input--name-full">
+                          <p>Нет</p>
+                        </div>
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="  question__item--full ">
+                      <div class="question__input  question__input--full">
+                        <input type="radio" name="item3" id="item8" value="Нет, но хочу заказать разработку проекта!">
+                        <label for="item8">
+                        <div class="question__input--name  question__input--name-full">
+                          <p>Нет, но хочу заказать разработку проекта!</p>
+                        </div>
+                        </label>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="btn__wrap">
+                    <div id="btnPrev2" class="question__btn">
+                      <input type="submit" value="Назад" class="btn  btn--prev">
+                    </div>
+                    <div id="btn3" class="question__btn">
+                      <input type="submit" value="Далее" class="btn  btn--question">
+                    </div>
+                  </div>
+              </div>
+
+              <div class="question__content  question-4"  id="question-4">
+                  <div class="question__subtitle">Когда собираетесь строиться?</div>
+                  <div class="question__item-wrapper--full">
+
+                    <div class="  question__item--full ">
+                      <div class="question__input  question__input--full">
+                        <input type="radio" name="item4" id="item9" value="В ближайшие 2-3 месяца" checked>
+                        <label for="item9">
+                        <div class="question__input--name  question__input--name-full">
+                          <p>В ближайшие 2-3 месяца</p>
+                        </div>
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="  question__item--full ">
+                      <div class="question__input  question__input--full">
+                        <input type="radio" name="item4" id="item10" value="В течение 6-12 месяцев">
+                        <label for="item10">
+                        <div class="question__input--name  question__input--name-full">
+                          <p>В течение 6-12 месяцев</p>
+                        </div>
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="  question__item--full ">
+                      <div class="question__input  question__input--full">
+                        <input type="radio" name="item4" id="item11" value="В следующем году">
+                        <label for="item11">
+                        <div class="question__input--name  question__input--name-full">
+                          <p>В следующем году</p>
+                        </div>
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="  question__item--full ">
+                      <div class="question__input  question__input--full">
+                        <input type="radio" name="item4" id="item12" value="Пока не знаю">
+                        <label for="item12">
+                        <div class="question__input--name  question__input--name-full">
+                          <p>Пока не знаю</p>
+                        </div>
+                        </label>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="btn__wrap">
+                    <div id="btnPrev3" class="question__btn">
+                      <input type="submit" value="Назад" class="btn  btn--prev">
+                    </div>
+                    <div id="btnResult" class="question__btn">
+                      <input type="submit" value="Далее" class="btn  btn--question">
+                    </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div id="quiz__result" class="quiz__result">
+          <h3>Спасибо за ваши ответы, они лучше сориентируют наших специалистов!</h3>
+          <p>Чтобы не потерять результаты, оставьте контактные данные и получите:</p>
+          
+          <div class="bonus__items">
+            <figure class="bonus__item">
+              <img src="img/img1.png" alt="">
+              <figcaption>
+                Эскиз вашего дома
+              </figcaption>
+            </figure>
+            <figure class="bonus__item">
+              <img src="img/img2.png" alt="">
+              <figcaption>
+                Примеры построенных объектов
+              </figcaption>
+            </figure>
+            <figure class="bonus__item">
+              <img src="img/img3.png" alt="">
+              <figcaption>
+                Консультацию по телефону с архитектором
+              </figcaption>
+            </figure>
+            <figure class="bonus__item">
+              <img src="img/img4.png" alt="">
+              <figcaption>
+                Практические советы по экономии стройматериалов
+              </figcaption>
+            </figure>
+          </div>
+
+          <form action="#" method="post" class="form">
+            <div class="form__input-wrap">
+              <label for="name">Введите ваше имя</label>
+              <input class="form__input" type="text" id="name" name="uname" placeholder="Например, Иван"  required>
+            </div>
+
+            <div class="form__input-wrap">
+              <label for="tel">Введите ваш телефон</label>
+              <input class="form__input" type="tel" id="tel" name="uphone" placeholder="+375 (XX) XXX-XX-XX"  required>
+            </div>
+
+            <div class="form__input-wrap">
+              <label for="email">Введите ваш e-mail</label>
+              <input class="form__input" type="email" id="email" name="uphone" placeholder="Ivan33@mail.ru"  required>
+            </div>
+
+            <button type="submit" title="Submit" class="btn form__btn btn--form">Оставить заявку</button>
+          </form>
+        </div>
+    </section>
+
+    <!--------------------------------------->
+    <section class="descr">
+      <div class="descr__wrapper">
+        <div class="descr__col1">
+          <h2>Уникальный дом под ваши предпочтения</h2>
+          <p>Если не можете найти интересный вариант жилья среди шаблонных проектов, наши специалисты <span>с вашей помощью </span>разработают вам подходящий дом:</p>
+          <div class="descr__items">
+            <figure class="descr__item">
+              <img src="img/paint1.png" alt="">
+              <figcaption>
+                <h3>с уникальным дизайнерским решением</h3>
+                <p>С 2013 г. наши архитекторы и дизайнеры разработали более 50 уникальных проектов</p>
+              </figcaption>
+            </figure>
+            <figure class="descr__item">
+              <img src="img/paint2.png" alt="">
+              <figcaption>
+                <h3>по европейским стандартам качества</h3>
+                <p>Мы даем гарантию в 5 лет, потому что уверены в наших специалистах и технологии строительства</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="descr__col2">
+          <img src="img/proect.png" alt="">
+        </div>
+      </div>
+    </section>
+    <!--------------------------------------->
+    <section class="application-form">
+      <div class="application-form__wrapper">
+        <h2>Оставьте заявку и мы разработаем рациональное решение вашего дома за 1 день</h2>
+        <form action="#" method="post" class="form">
+          <div class="form__input-wrap">
+            <label for="name">Введите ваше имя</label>
+            <input class="form__input" type="text" id="name" name="uname" placeholder="Например, Иван"  required>
+          </div>
+
+          <div class="form__input-wrap">
+            <label for="tel">Введите ваш телефон</label>
+            <input class="form__input" type="tel" id="tel" name="uphone" placeholder="+375 (XX) XXX-XX-XX"  required>
+          </div>
+
+          <div class="form__input-wrap">
+            <label for="email">Введите ваш e-mail</label>
+            <input class="form__input" type="email" id="email" name="uphone" placeholder="Ivan33@mail.ru"  required>
+          </div>
+
+          <button type="submit" title="Submit" class="btn form__btn btn--form">Оставить заявку</button>
+        </form>
+      </div>
+    </section>
+
+    <!-------------projects------------------>
+    <section class="projects">
+      <h2>Представляем вам реализованные проекты!</h2>
+      <div class="projects__wrapper">
+          <div class="projects-item-slider">
+            <div class="slick-slider-item">
+              <img src="img/dom1.png" alt="" />
+            </div>
+            <div class="slick-slider-item">
+              <img src="img/dom2.png" alt="" />
+            </div>
+            <div class="slick-slider-item">
+              <img src="img/dom1.png" alt="" />
+            </div>
+            <div class="slick-slider-item">
+              <img src="img/dom1.png" alt="" />
+            </div>
+          </div>
+          <div class="projects__col2">
+            <div class="projects__text">
+              <p>Мы работаем с 2013 г. и нам есть, чем гордиться. Поэтому мы хотели бы показать вам, что можно построить у нас.</p>
+              <span>
+                Снизу вы увидите несколько готовых проектов типовых домов!
+              </span>
+            </div>
+            <div class="projects-thumb-slider">
+            <div class="slick-slider-item">
+              <img src="img/dom1.png" alt="" />
+            </div> 
+            <div class="slick-slider-item">
+              <img src="img/dom1.png" alt="" />
+            </div>
+            <div class="slick-slider-item">
+              <img src="img/dom1.png" alt="" />
+            </div>
+            <div class="slick-slider-item">
+              <img src="img/dom1.png" alt="" />
+            </div>
+            </div>
+          </div>
+      </div>
+      <form action="#" method="post" class="form">
+          <div class="form__input-wrap">
+            <label for="name">Введите ваше имя</label>
+            <input class="form__input" type="text" id="name" name="uname" placeholder="Например, Иван"  required>
+          </div>
+
+          <div class="form__input-wrap">
+            <label for="tel">Введите ваш телефон</label>
+            <input class="form__input" type="tel" id="tel" name="uphone" placeholder="+375 (XX) XXX-XX-XX"  required>
+          </div>
+
+          <div class="form__input-wrap">
+            <label for="email">Введите ваш e-mail</label>
+            <input class="form__input" type="email" id="email" name="uphone" placeholder="Ivan33@mail.ru"  required>
+          </div>
+
+          <button type="submit" title="Submit" class="btn form__btn btn--form">Оставить заявку</button>
+        </form>
+    </section>
+    
+  <script type="text/javascript" src="js/test.js"></script>
+  <script type="text/javascript" src="js/preloader.js"></script>
+  <script type="text/javascript" src="js/slick-slider.js"></script>
+  </body>
+</html>
