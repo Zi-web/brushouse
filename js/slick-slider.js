@@ -12,7 +12,7 @@ $('.projects-thumb-slider').slick({
   dots: false,
   arrows: true,
   focusOnSelect: true,
-  infinite: false,
+  infinite: true,
   responsive:  [
         {
           breakpoint: 1100,
@@ -35,7 +35,7 @@ $('.projects-item-slider').slick({
   slidesToScroll: 1,
   arrows: false,
   asNavFor: '.projects-thumb-slider',
-  infinite: false
+  infinite: true
 });
 
 /*

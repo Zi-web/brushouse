@@ -84,6 +84,24 @@ let inputs = document.querySelectorAll('.input__file');
       });
     });
 
+
+let inputs2 = document.querySelectorAll('.full-form__file');
+    Array.prototype.forEach.call(inputs2, function (input) {
+      let label = input.nextElementSibling,
+        labelVal = label.querySelector('.full-form__file-button-text').innerText;
+ 
+      input.addEventListener('change', function (e) {
+        let countFiles = '';
+        if (this.files && this.files.length >= 1)
+          countFiles = this.files.length;
+ 
+        if (countFiles)
+          label.querySelector('.full-form__file-button-text').innerText = '(' + countFiles + ')';
+        else
+          label.querySelector('.full-form__file-button-text').innerText = labelVal;
+      });
+    });
+
 /*"use strict";
 let question1 = document.getElementById('question-1');
 let question2 = document.getElementById('question-2');
